@@ -2,6 +2,10 @@
 name: 'Checkov GitHub Action'
 author: 'Chris Mavrakis'
 description: 'Run Checkov against infrastructure as code, open source packages, container images, and CI/CD configurations as a pre-packaged GitHub Action.'
+on: 
+  issues:
+    types:
+      - opened
 inputs:
   file:
     description: 'File with infrastructure code or packages to scan'
